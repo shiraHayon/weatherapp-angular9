@@ -1,0 +1,7 @@
+<div *ngIf="forecast.length">
+  <div *ngFor="let item of forecast">
+    location:{{item.location}}
+    current temp:{{item.temp.temp}}
+    description:{{item.description.description}}
+  </div>
+</div>

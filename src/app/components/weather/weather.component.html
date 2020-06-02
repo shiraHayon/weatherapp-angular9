@@ -1,0 +1,11 @@
+<div class="container top-space">
+  <div *ngIf="todayWeather.length && forecastWeather.length">
+    <div class="row">
+      <div class="col-lg-4" *ngFor="let item of todayWeather; let i = index">
+        <app-today-weather-item [todayWeather]="item"></app-today-weather-item>
+      </div>
+    </div>
+  </div>
+
+</div>
+
